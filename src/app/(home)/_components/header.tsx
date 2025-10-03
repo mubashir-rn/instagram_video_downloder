@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/sheet";
 
 import { Button } from "@/components/ui/button";
-import { LogoImage, LogoText } from "@/components/logo";
+import { Logo } from "@/components/logo";
 import { LocaleDropdown } from "@/features/i18n/locale-dropdown";
 import { ThemeToggleButton } from "@/features/theme/theme-toggle-button";
 
@@ -46,8 +46,8 @@ export function Header() {
           onClick={scrollUp}
           className="flex cursor-pointer items-center gap-2"
         >
-          <LogoImage className="h-6 w-6 text-teal-500" />
-          <LogoText />
+          <Logo className="h-16 w-16" />
+          <span className="font-semibold">Instagram Video Downloader</span>
         </div>
 
         {/* Desktop Navigation */}
@@ -93,8 +93,8 @@ export function Header() {
               <SheetHeader className="border-b">
                 <SheetTitle>
                   <div className="flex items-center gap-2">
-                    <LogoImage className="h-6 w-6 text-teal-500" />
-                    <LogoText />
+                    <Logo className="h-16 w-16" />
+                    <span className="font-semibold">Instagram Video Downloader</span>
                   </div>
                 </SheetTitle>
               </SheetHeader>

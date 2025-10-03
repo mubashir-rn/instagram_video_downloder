@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://instagram-video-downloader.vercel.app/sitemap.xml

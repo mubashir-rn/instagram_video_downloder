@@ -38,6 +38,24 @@ export default async function RootLayout({
             </ReactQueryProvider>
           </ThemeProvider>
         </LocaleProvider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebApplication",
+              name: "Instagram Video Download",
+              url: "https://instagram-video-downloader.vercel.app",
+              applicationCategory: "MultimediaApplication",
+              operatingSystem: "Any",
+              offers: {
+                "@type": "Offer",
+                price: "0",
+                priceCurrency: "USD",
+              },
+            }),
+          }}
+        />
       </body>
     </html>
   );
